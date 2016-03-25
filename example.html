@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>	
+		<script src="js/jquery.sc-price-format.min.js"></script>	
+	</head>
+<body>
+
+<h1>Price formater</h1>
+<p>When we need to input price amount in website say for contribution/donation there is always a common problem 
+that is if we allow users a custom amount and user put that amount with decimal point.</p>
+<p>Standart price amount is alway two decimal point. But the problem is if user continuesly putting value after decimal and we try to fix with toFixed(2) function.
+ But it has a small bug that is if user puting number greater then 5 continusly it will increse the amount.</p>
+<p>&nbsp;</p>
+<h2>Here is the solution</h2>
+<p><input placeholder="Try it with 23423.987" type="text" class="sc-price-format"></p>
+<p><input placeholder="Try it with 23423.984" type="text" class="sc-price-format"></p>
+<script>
+$(document).ready( function() {
+    $('.sc-price-format').scPriceFormat();
+});
+</script>
+
+</body>
+</html>
