@@ -18,3 +18,7 @@ $(document).ready( function() {
 });
 
 &lt;/script>
+
+#Install with bower
+
+Run bower install sc-price-format
