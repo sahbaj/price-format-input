@@ -21,4 +21,4 @@ $(document).ready( function() {
 
 #Install with bower
 
-Run bower install sc-price-format
+Run bower install input-price-format
